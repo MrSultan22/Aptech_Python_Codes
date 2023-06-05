@@ -40,27 +40,18 @@ print("--------------------------")
 # print("--------------------------")
 
 #======================================
-# if i take repeated value than compoler give sms "take different value, it is already exist"?
-# d=set()
-# for b in range(1,5):
-#     b=input("enter any input")
-
-#     d.add(b)
-#     print(d.discard(b))
+# Q: if i take repeated value than compoler give sms "take different value, it is already exist"?
+#empty_set = set()
+range_input = int(input("how many you have items that you wants to store: "))
+for i in range (range_input):
+    data_input = input("enter your items in set: ")
+    if data_input in empty_set:
+        print("yes",data_input,"is already exist.")
+    else:
+        empty_set.add(data_input)
+    print(empty_set)
 # print("--------------------------")
 
 
 #======================================
-d=set()
-for b in range(1,5):
-    b=input("enter any input")
-    d.add(b)
-    if b in d:
-     print("Yes, ",b," is in this set")
-    elif b == True:
-        print(exit())
-     
-    print(d)
-print("--------------------------")
 
-#======================================
